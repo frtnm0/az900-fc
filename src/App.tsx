@@ -247,18 +247,35 @@ const ExamMode: React.FC<{ questions: AZ900ScenarioQuestion[]; onExit: () => voi
     );
 };
 
+// --- Utilities ---
+const shuffleArray = <T,>(array: T[]): T[] => {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+};
+
 // --- Main App ---
 
 export default function App() {
     const [view, setView] = useState<'menu' | 'flashcards' | 'exam'>('menu');
     const [currentIndex, setCurrentIndex] = useState(0);
     const [showAnswer, setShowAnswer] = useState(false);
+    const [shuffledQuestions, setShuffledQuestions] = useState<AZ900ScenarioQuestion[]>([]);
+
     const totalCards = AZ900_STUDY_DATASET.length;
 
     const handleNext = () => setCurrentIndex((prev) => (prev + 1) % totalCards);
     const handlePrev = () => setCurrentIndex((prev) => (prev - 1 + totalCards) % totalCards);
     const handleRandom = () => setCurrentIndex(Math.floor(Math.random() * totalCards));
     const handleToggle = () => setShowAnswer(!showAnswer);
+
+    const startExam = () => {
+        setShuffledQuestions(shuffleArray(AZ900_SCENARIO_QUESTIONS));
+        setView('exam');
+    };
 
     return (
         <Container maxWidth="md" sx={{ py: 6 }}>
@@ -297,7 +314,7 @@ export default function App() {
                             p: 4, textAlign: 'center', cursor: 'pointer', height: '100%',
                             transition: 'hover 0.3s', '&:hover': { transform: 'scale(1.02)' },
                             background: '#1e293b', border: '1px solid rgba(255,255,255,0.1)'
-                        }} onClick={() => setView('exam')}>
+                        }} onClick={startExam}>
                             <QuizIcon sx={{ fontSize: 60, color: 'secondary.main', mb: 2 }} />
                             <Typography variant="h5" sx={{ color: '#fff', fontWeight: 700, mb: 1 }}>Practice Exam</Typography>
                             <Typography variant="body2" sx={{ color: '#64748b' }}>
@@ -341,7 +358,7 @@ export default function App() {
 
             {/* Exam View */}
             {view === 'exam' && (
-                <ExamMode questions={AZ900_SCENARIO_QUESTIONS} onExit={() => setView('menu')} />
+                <ExamMode questions={shuffledQuestions} onExit={() => setView('menu')} />
             )}
         </Container>
     );

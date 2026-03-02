@@ -491,7 +491,7 @@ export const AZ900_SCENARIO_QUESTIONS: AZ900ScenarioQuestion[] = [
     difficulty: "medium"
   },
   {
-    id: 301,
+    id: 31,
     scenario: "A startup wants to deploy a Windows Server environment quickly without purchasing physical servers.",
     question: "Which Azure service should they use?",
     options: [
@@ -507,7 +507,7 @@ export const AZ900_SCENARIO_QUESTIONS: AZ900ScenarioQuestion[] = [
   },
 
   {
-    id: 302,
+    id: 32,
     scenario: "A developer wants to deploy a web application but does not want to manage the underlying operating system.",
     question: "Which Azure service should the developer use?",
     options: [
@@ -523,7 +523,7 @@ export const AZ900_SCENARIO_QUESTIONS: AZ900ScenarioQuestion[] = [
   },
 
   {
-    id: 303,
+    id: 33,
     scenario: "A company needs to store millions of images and video files that will be accessed through the internet.",
     question: "Which Azure storage solution is best suited?",
     options: [
@@ -539,7 +539,7 @@ export const AZ900_SCENARIO_QUESTIONS: AZ900ScenarioQuestion[] = [
   },
 
   {
-    id: 304,
+    id: 34,
     scenario: "An application must execute small pieces of code automatically whenever a file is uploaded.",
     question: "Which Azure service supports event-driven execution?",
     options: [
@@ -555,7 +555,7 @@ export const AZ900_SCENARIO_QUESTIONS: AZ900ScenarioQuestion[] = [
   },
 
   {
-    id: 305,
+    id: 35,
     scenario: "A company needs to assign specific permissions to users so they can manage certain Azure resources but not others.",
     question: "Which Azure feature should be used?",
     options: [
@@ -571,7 +571,7 @@ export const AZ900_SCENARIO_QUESTIONS: AZ900ScenarioQuestion[] = [
   },
 
   {
-    id: 306,
+    id: 36,
     scenario: "An organization wants to enforce rules such as allowing only approved VM sizes to be deployed.",
     question: "Which Azure feature should be used?",
     options: [
@@ -587,7 +587,7 @@ export const AZ900_SCENARIO_QUESTIONS: AZ900ScenarioQuestion[] = [
   },
 
   {
-    id: 307,
+    id: 37,
     scenario: "A company wants to monitor resource health, collect metrics, and generate alerts when CPU usage is high.",
     question: "Which service should be used?",
     options: [
@@ -603,7 +603,7 @@ export const AZ900_SCENARIO_QUESTIONS: AZ900ScenarioQuestion[] = [
   },
 
   {
-    id: 308,
+    id: 38,
     scenario: "A company wants automated recommendations to improve performance, reliability, and reduce Azure costs.",
     question: "Which Azure service provides these recommendations?",
     options: [
@@ -619,7 +619,7 @@ export const AZ900_SCENARIO_QUESTIONS: AZ900ScenarioQuestion[] = [
   },
 
   {
-    id: 309,
+    id: 39,
     scenario: "A business wants to connect its on-premises network to Azure securely using the public internet.",
     question: "Which Azure networking service should be used?",
     options: [
@@ -635,7 +635,7 @@ export const AZ900_SCENARIO_QUESTIONS: AZ900ScenarioQuestion[] = [
   },
 
   {
-    id: 310,
+    id: 40,
     scenario: "A financial institution requires a private dedicated connection between its datacenter and Azure.",
     question: "Which Azure service should be used?",
     options: [
@@ -651,7 +651,7 @@ export const AZ900_SCENARIO_QUESTIONS: AZ900ScenarioQuestion[] = [
   },
 
   {
-    id: 311,
+    id: 41,
     scenario: "A DevOps engineer wants to deploy infrastructure repeatedly using templates.",
     question: "Which Azure technology should they use?",
     options: [
@@ -667,7 +667,7 @@ export const AZ900_SCENARIO_QUESTIONS: AZ900ScenarioQuestion[] = [
   },
 
   {
-    id: 312,
+    id: 42,
     scenario: "A developer wants to run containers without managing virtual machines or Kubernetes clusters.",
     question: "Which service should be used?",
     options: [
@@ -683,7 +683,7 @@ export const AZ900_SCENARIO_QUESTIONS: AZ900ScenarioQuestion[] = [
   },
 
   {
-    id: 313,
+    id: 43,
     scenario: "A company wants to orchestrate containers using Kubernetes with minimal management overhead.",
     question: "Which Azure service should they use?",
     options: [
@@ -699,7 +699,7 @@ export const AZ900_SCENARIO_QUESTIONS: AZ900ScenarioQuestion[] = [
   },
 
   {
-    id: 314,
+    id: 44,
     scenario: "A company wants centralized identity management for employees accessing cloud resources.",
     question: "Which Azure identity service should be used?",
     options: [
@@ -715,7 +715,7 @@ export const AZ900_SCENARIO_QUESTIONS: AZ900ScenarioQuestion[] = [
   },
 
   {
-    id: 315,
+    id: 45,
     scenario: "An application must securely store secrets such as API keys and certificates.",
     question: "Which Azure service should be used?",
     options: [
@@ -731,7 +731,7 @@ export const AZ900_SCENARIO_QUESTIONS: AZ900ScenarioQuestion[] = [
   },
 
   {
-    id: 316,
+    id: 46,
     scenario: "An application must automatically increase compute resources during peak traffic hours.",
     question: "Which Azure capability supports this requirement?",
     options: [
@@ -747,7 +747,7 @@ export const AZ900_SCENARIO_QUESTIONS: AZ900ScenarioQuestion[] = [
   },
 
   {
-    id: 317,
+    id: 47,
     scenario: "A global application must route users to the closest Azure region and provide automatic failover.",
     question: "Which Azure service provides this functionality?",
     options: [
@@ -763,7 +763,7 @@ export const AZ900_SCENARIO_QUESTIONS: AZ900ScenarioQuestion[] = [
   },
 
   {
-    id: 318,
+    id: 48,
     scenario: "A company wants to track cloud spending and create alerts when budgets are exceeded.",
     question: "Which Azure service should they use?",
     options: [
@@ -779,7 +779,7 @@ export const AZ900_SCENARIO_QUESTIONS: AZ900ScenarioQuestion[] = [
   },
 
   {
-    id: 319,
+    id: 49,
     scenario: "A security team wants threat detection and security posture monitoring for Azure resources.",
     question: "Which service should they use?",
     options: [
@@ -795,7 +795,7 @@ export const AZ900_SCENARIO_QUESTIONS: AZ900ScenarioQuestion[] = [
   },
 
   {
-    id: 320,
+    id: 50,
     scenario: "An application needs isolated networking for multiple Azure resources.",
     question: "Which Azure service provides this capability?",
     options: [
