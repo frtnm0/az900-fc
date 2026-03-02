@@ -808,6 +808,325 @@ export const AZ900_SCENARIO_QUESTIONS: AZ900ScenarioQuestion[] = [
     explanation: "Virtual Networks allow Azure resources to communicate within isolated networks.",
     category: "Networking",
     difficulty: "easy"
+  },
+  {
+    id: 51,
+    scenario: "A company wants to ensure its Azure resources automatically shut down after business hours to reduce costs.",
+    question: "Which Azure feature can help automate this process?",
+    options: [
+      "Azure Automation",
+      "Azure Bastion",
+      "Azure Sentinel",
+      "Azure Traffic Manager"
+    ],
+    correctAnswer: 0,
+    explanation: "Azure Automation allows scheduled runbooks that can start or stop resources automatically.",
+    category: "Automation",
+    difficulty: "medium"
+  },
+
+  {
+    id: 52,
+    scenario: "An organization wants to ensure that all storage accounts are encrypted automatically.",
+    question: "Which Azure capability helps enforce this requirement?",
+    options: [
+      "Azure Policy",
+      "Azure Monitor",
+      "Azure DevOps",
+      "Azure Bastion"
+    ],
+    correctAnswer: 0,
+    explanation: "Azure Policy can enforce compliance rules such as requiring encryption for storage accounts.",
+    category: "Governance",
+    difficulty: "easy"
+  },
+
+  {
+    id: 53,
+    scenario: "A development team needs a temporary environment to test applications without affecting production workloads.",
+    question: "Which Azure service is designed specifically for this scenario?",
+    options: [
+      "Azure DevTest Labs",
+      "Azure Sentinel",
+      "Azure Firewall",
+      "Azure CDN"
+    ],
+    correctAnswer: 0,
+    explanation: "Azure DevTest Labs helps teams quickly create and manage development and testing environments.",
+    category: "Development",
+    difficulty: "easy"
+  },
+
+  {
+    id: 54,
+    scenario: "A company wants to distribute website content to users globally with low latency.",
+    question: "Which Azure service should they use?",
+    options: [
+      "Azure Content Delivery Network",
+      "Azure Virtual Network",
+      "Azure Bastion",
+      "Azure VPN Gateway"
+    ],
+    correctAnswer: 0,
+    explanation: "Azure CDN caches content at edge locations worldwide to improve performance.",
+    category: "Networking",
+    difficulty: "easy"
+  },
+
+  {
+    id: 55,
+    scenario: "An application must process thousands of batch computing jobs simultaneously.",
+    question: "Which Azure service is designed for large-scale parallel workloads?",
+    options: [
+      "Azure Batch",
+      "Azure App Service",
+      "Azure Functions",
+      "Azure Monitor"
+    ],
+    correctAnswer: 0,
+    explanation: "Azure Batch is designed for large-scale parallel and batch computing workloads.",
+    category: "Compute",
+    difficulty: "medium"
+  },
+
+  {
+    id: 56,
+    scenario: "A company wants to analyze telemetry data collected from applications to gain insights.",
+    question: "Which Azure monitoring feature provides detailed application performance metrics?",
+    options: [
+      "Application Insights",
+      "Azure Bastion",
+      "Azure Traffic Manager",
+      "Azure Advisor"
+    ],
+    correctAnswer: 0,
+    explanation: "Application Insights monitors application performance and user behavior.",
+    category: "Monitoring",
+    difficulty: "medium"
+  },
+
+  {
+    id: 57,
+    scenario: "A security administrator wants to restrict network traffic to specific ports and IP addresses.",
+    question: "Which Azure networking feature should be used?",
+    options: [
+      "Network Security Groups",
+      "Azure Monitor",
+      "Azure Policy",
+      "Azure CDN"
+    ],
+    correctAnswer: 0,
+    explanation: "Network Security Groups control inbound and outbound traffic rules for Azure resources.",
+    category: "Networking",
+    difficulty: "easy"
+  },
+
+  {
+    id: 58,
+    scenario: "A company wants to centrally manage multiple Azure subscriptions across departments.",
+    question: "Which Azure structure should they use?",
+    options: [
+      "Management Groups",
+      "Resource Groups",
+      "Availability Sets",
+      "Azure Monitor"
+    ],
+    correctAnswer: 0,
+    explanation: "Management Groups allow governance across multiple subscriptions.",
+    category: "Governance",
+    difficulty: "easy"
+  },
+
+  {
+    id: 59,
+    scenario: "A team wants to ensure applications remain available during hardware failures within a datacenter.",
+    question: "Which Azure feature provides redundancy within a datacenter?",
+    options: [
+      "Availability Sets",
+      "Resource Groups",
+      "Azure Policy",
+      "Azure Advisor"
+    ],
+    correctAnswer: 0,
+    explanation: "Availability Sets distribute VMs across multiple fault and update domains.",
+    category: "Reliability",
+    difficulty: "medium"
+  },
+
+  {
+    id: 60,
+    scenario: "A developer needs a globally distributed database with automatic replication.",
+    question: "Which Azure service meets this requirement?",
+    options: [
+      "Azure Cosmos DB",
+      "Azure SQL Managed Instance",
+      "Azure Blob Storage",
+      "Azure Queue Storage"
+    ],
+    correctAnswer: 0,
+    explanation: "Cosmos DB provides global distribution and automatic replication across regions.",
+    category: "Databases",
+    difficulty: "medium"
+  },
+
+  {
+    id: 61,
+    scenario: "A company wants to prevent accidental deletion of critical Azure resources.",
+    question: "Which feature should they use?",
+    options: [
+      "Resource Locks",
+      "Azure Monitor",
+      "Azure Advisor",
+      "Azure CDN"
+    ],
+    correctAnswer: 0,
+    explanation: "Resource locks prevent deletion or modification of critical resources.",
+    category: "Governance",
+    difficulty: "easy"
+  },
+
+  {
+    id: 62,
+    scenario: "An administrator needs to access a Linux VM through SSH directly from the Azure portal without opening public ports.",
+    question: "Which Azure service provides this capability?",
+    options: [
+      "Azure Bastion",
+      "Azure Firewall",
+      "Azure CDN",
+      "Azure Sentinel"
+    ],
+    correctAnswer: 0,
+    explanation: "Azure Bastion allows secure SSH and RDP connections via the Azure portal.",
+    category: "Networking",
+    difficulty: "easy"
+  },
+
+  {
+    id: 63,
+    scenario: "A company wants to store large files used by virtual machines such as operating system disks.",
+    question: "Which storage option should be used?",
+    options: [
+      "Azure Managed Disks",
+      "Azure Queue Storage",
+      "Azure Table Storage",
+      "Azure Files"
+    ],
+    correctAnswer: 0,
+    explanation: "Managed Disks provide persistent storage for Azure virtual machines.",
+    category: "Storage",
+    difficulty: "easy"
+  },
+
+  {
+    id: 64,
+    scenario: "A team wants to share files across multiple virtual machines using a managed file system.",
+    question: "Which Azure service should they use?",
+    options: [
+      "Azure Files",
+      "Azure Disk Storage",
+      "Azure Table Storage",
+      "Azure Cosmos DB"
+    ],
+    correctAnswer: 0,
+    explanation: "Azure Files provides fully managed file shares accessible via SMB.",
+    category: "Storage",
+    difficulty: "easy"
+  },
+
+  {
+    id: 65,
+    scenario: "An organization wants to automate infrastructure deployment pipelines integrated with source control.",
+    question: "Which Azure platform should they use?",
+    options: [
+      "Azure DevOps",
+      "Azure Monitor",
+      "Azure Policy",
+      "Azure Firewall"
+    ],
+    correctAnswer: 0,
+    explanation: "Azure DevOps provides CI/CD pipelines integrated with Git repositories.",
+    category: "DevOps",
+    difficulty: "medium"
+  },
+
+  {
+    id: 66,
+    scenario: "A company needs to store structured relational data with automatic backups and patching.",
+    question: "Which Azure service provides this?",
+    options: [
+      "Azure SQL Database",
+      "Azure Cosmos DB",
+      "Azure Table Storage",
+      "Azure Blob Storage"
+    ],
+    correctAnswer: 0,
+    explanation: "Azure SQL Database is a fully managed relational database service.",
+    category: "Databases",
+    difficulty: "easy"
+  },
+
+  {
+    id: 67,
+    scenario: "An organization wants to detect suspicious login activity in its Azure environment.",
+    question: "Which Azure service helps analyze security data and detect threats?",
+    options: [
+      "Microsoft Sentinel",
+      "Azure Advisor",
+      "Azure DevTest Labs",
+      "Azure Traffic Manager"
+    ],
+    correctAnswer: 0,
+    explanation: "Microsoft Sentinel is a cloud-native SIEM for detecting threats.",
+    category: "Security",
+    difficulty: "medium"
+  },
+
+  {
+    id: 68,
+    scenario: "A business wants to scale web application instances automatically when traffic increases.",
+    question: "Which Azure feature enables this behavior?",
+    options: [
+      "Autoscale",
+      "Azure Advisor",
+      "Azure Policy",
+      "Azure Bastion"
+    ],
+    correctAnswer: 0,
+    explanation: "Autoscale adjusts compute resources automatically based on metrics.",
+    category: "Compute",
+    difficulty: "easy"
+  },
+
+  {
+    id: 69,
+    scenario: "A company needs to route web traffic to the nearest regional endpoint based on DNS.",
+    question: "Which Azure service supports DNS-based traffic routing?",
+    options: [
+      "Azure Traffic Manager",
+      "Azure Firewall",
+      "Azure Monitor",
+      "Azure CDN"
+    ],
+    correctAnswer: 0,
+    explanation: "Traffic Manager uses DNS to route users to the nearest available endpoint.",
+    category: "Networking",
+    difficulty: "medium"
+  },
+
+  {
+    id: 70,
+    scenario: "An organization wants recommendations to optimize Azure deployments for reliability and cost.",
+    question: "Which Azure service should they consult?",
+    options: [
+      "Azure Advisor",
+      "Azure Sentinel",
+      "Azure DevOps",
+      "Azure CDN"
+    ],
+    correctAnswer: 0,
+    explanation: "Azure Advisor provides best practice recommendations for Azure resources.",
+    category: "Cost Management",
+    difficulty: "easy"
   }
 ]
 
