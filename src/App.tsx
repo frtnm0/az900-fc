@@ -29,6 +29,7 @@ import CancelIcon from '@mui/icons-material/Cancel';
 
 import { AZ900_STUDY_DATASET, StudyTerm } from './dataset/set1a';
 import { AZ900_SCENARIO_QUESTIONS, AZ900ScenarioQuestion } from './dataset/set1b';
+import { AZ900_SCENARIO_QUESTIONS_SETC } from './dataset/set1c';
 
 // --- Components ---
 
@@ -272,8 +273,8 @@ export default function App() {
     const handleRandom = () => setCurrentIndex(Math.floor(Math.random() * totalCards));
     const handleToggle = () => setShowAnswer(!showAnswer);
 
-    const startExam = () => {
-        setShuffledQuestions(shuffleArray(AZ900_SCENARIO_QUESTIONS));
+    const startExam = (questions: AZ900ScenarioQuestion[]) => {
+        setShuffledQuestions(shuffleArray(questions));
         setView('exam');
     };
 
@@ -296,7 +297,7 @@ export default function App() {
             {/* Menu View */}
             {view === 'menu' && (
                 <Grid container spacing={4} justifyContent="center">
-                    <Grid item xs={12} sm={6}>
+                    <Grid item xs={12} sm={4}>
                         <Card sx={{
                             p: 4, textAlign: 'center', cursor: 'pointer', height: '100%',
                             transition: 'hover 0.3s', '&:hover': { transform: 'scale(1.02)' },
@@ -309,16 +310,29 @@ export default function App() {
                             </Typography>
                         </Card>
                     </Grid>
-                    <Grid item xs={12} sm={6}>
+                    <Grid item xs={12} sm={4}>
                         <Card sx={{
                             p: 4, textAlign: 'center', cursor: 'pointer', height: '100%',
                             transition: 'hover 0.3s', '&:hover': { transform: 'scale(1.02)' },
                             background: '#1e293b', border: '1px solid rgba(255,255,255,0.1)'
-                        }} onClick={startExam}>
+                        }} onClick={() => startExam(AZ900_SCENARIO_QUESTIONS)}>
                             <QuizIcon sx={{ fontSize: 60, color: 'secondary.main', mb: 2 }} />
-                            <Typography variant="h5" sx={{ color: '#fff', fontWeight: 700, mb: 1 }}>Practice Exam</Typography>
+                            <Typography variant="h5" sx={{ color: '#fff', fontWeight: 700, mb: 1 }}>Practice Exam A</Typography>
                             <Typography variant="body2" sx={{ color: '#64748b' }}>
-                                Test your knowledge with {AZ900_SCENARIO_QUESTIONS.length} scenario-based questions and get scored.
+                                Test your knowledge with {AZ900_SCENARIO_QUESTIONS.length} scenario-based questions (Set A).
+                            </Typography>
+                        </Card>
+                    </Grid>
+                    <Grid item xs={12} sm={4}>
+                        <Card sx={{
+                            p: 4, textAlign: 'center', cursor: 'pointer', height: '100%',
+                            transition: 'hover 0.3s', '&:hover': { transform: 'scale(1.02)' },
+                            background: '#1e293b', border: '1px solid rgba(255,255,255,0.1)'
+                        }} onClick={() => startExam(AZ900_SCENARIO_QUESTIONS_SETC as any)}>
+                            <QuizIcon sx={{ fontSize: 60, color: 'success.main', mb: 2 }} />
+                            <Typography variant="h5" sx={{ color: '#fff', fontWeight: 700, mb: 1 }}>Practice Exam B</Typography>
+                            <Typography variant="body2" sx={{ color: '#64748b' }}>
+                                Test your knowledge with {AZ900_SCENARIO_QUESTIONS_SETC.length} scenario-based questions (Set B).
                             </Typography>
                         </Card>
                     </Grid>
